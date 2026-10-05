@@ -1,3 +1,4 @@
+document.getElementById("hero-img").src=IMG.hero;
 const L=[
 {id:1,r:'SP',img:'l1',nome:'Chácara Vista da Serra',loc:'Atibaia, SP',tipo:'Venda',preco:1850000,terreno:'5.000 m²',q:4,area:'320 m²',extra:'Piscina e pomar'},
 {id:2,r:'MG',img:'l2',nome:'Sítio Mirante do Café',loc:'Camanducaia, sul de MG',tipo:'Venda',preco:2400000,terreno:'3,2 ha',q:4,area:'410 m²',extra:'Cafezal e vista para a serra'},
@@ -7,7 +8,7 @@ const L=[
 {id:6,r:'SP',img:'l6',nome:'Sítio Pomar e Lago',loc:'Bragança Paulista, SP',tipo:'Venda',preco:1290000,terreno:'2,5 ha',q:3,area:'210 m²',extra:'Horta, pomar e lago'}];
 const brl=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
 const grid=document.getElementById('grid');
-function draw(f){grid.innerHTML=L.filter(x=>f==='todos'||x.r===f).map(x=>`<article class="card"><div class="ph"><img src="img/${x.img}.jpg" alt="${x.nome}, ${x.loc} (imagem ilustrativa)" loading="lazy" width="1600" height="1200"><span class="seal">Verificado VerdeLar</span><span class="tag">${x.tipo}</span><span class="ex">Exemplo ilustrativo</span></div><div class="cb"><span class="loc">${x.loc}</span><h3>${x.nome}</h3><div class="price">${brl(x.preco)}${x.mes?' <small>/ mês</small>':''}</div><div class="facts"><span><b>${x.terreno}</b> de terreno</span><span><b>${x.q}</b> quartos</span><span><b>${x.area}</b> construídos</span></div><div class="facts" style="border:0;padding:0;margin:0">${x.extra}</div></div></article>`).join('');}
+function draw(f){grid.innerHTML=L.filter(x=>f==='todos'||x.r===f).map(x=>`<article class="card"><div class="ph"><img src="${IMG[x.img]}" alt="${x.nome}, ${x.loc} (imagem ilustrativa)" loading="lazy" width="1600" height="1200"><span class="seal">Verificado VerdeLar</span><span class="tag">${x.tipo}</span><span class="ex">Exemplo ilustrativo</span></div><div class="cb"><span class="loc">${x.loc}</span><h3>${x.nome}</h3><div class="price">${brl(x.preco)}${x.mes?' <small>/ mês</small>':''}</div><div class="facts"><span><b>${x.terreno}</b> de terreno</span><span><b>${x.q}</b> quartos</span><span><b>${x.area}</b> construídos</span></div><div class="facts" style="border:0;padding:0;margin:0">${x.extra}</div></div></article>`).join('');}
 draw('todos');
 document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(o=>o.classList.toggle('on',o===b));draw(b.dataset.f);});
 document.querySelectorAll('.lead-form').forEach(f=>f.addEventListener('submit',async e=>{
