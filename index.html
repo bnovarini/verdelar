@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VerdeLar | Encontre sua casa cercada de verde, com confiança e curadoria</title>
+<meta name="description" content="Chácaras, sítios e casas de campo com documentação e meio ambiente verificados, fotos profissionais e contrato digital. Cadastre seu e-mail para ser avisado do lançamento.">
+<meta property="og:title" content="VerdeLar | Sua casa cercada de verde, com curadoria">
+<meta property="og:description" content="Imóveis rurais residenciais com documentação e meio ambiente verificados. Seja avisado quando lançarmos.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://bnovarini.github.io/verdelar/img/og.jpg">
+<meta name="theme-color" content="#1f4a34">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="VerdeLar">
+    <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M32 8c-10 9-16 17-16 26a16 16 0 0 0 32 0c0-9-6-17-16-26z" fill="currentColor"/><path d="M32 22v34" stroke="#1f4a34" stroke-width="3.5" stroke-linecap="round"/></svg>
+    <span>VerdeLar</span>
+  </a>
+  <a class="btn btn-sm" href="#avise">Quero ser avisado</a>
+</header>
+
+<main>
+<section class="hero">
+  <img class="hero-img" src="img/hero.jpg" alt="Casa de campo com varanda em meio a colinas verdes ao entardecer" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-in wrap">
+    <p class="eyebrow">Imóveis rurais residenciais com curadoria</p>
+    <h1>Encontre sua casa cercada de verde, com confiança e curadoria.</h1>
+    <p class="lead">Chácaras, sítios e casas de campo com documentação e meio ambiente conferidos, fotos profissionais e todo o processo feito online, do primeiro olhar à assinatura.</p>
+    <form class="lead-form" data-origem="hero" novalidate>
+      <div class="row">
+        <label class="sr" for="email-hero">Seu e-mail</label>
+        <input id="email-hero" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Seu melhor e-mail" required>
+        <button class="btn" type="submit">Quero ser avisado quando lançar</button>
+      </div>
+      <fieldset class="chips"><legend class="sr">Estou procurando para</legend>
+        <label><input type="radio" name="interesse" value="comprar" checked><span>Comprar</span></label>
+        <label><input type="radio" name="interesse" value="alugar"><span>Alugar</span></label>
+        <label><input type="radio" name="interesse" value="os-dois"><span>Os dois</span></label>
+      </fieldset>
+      <p class="msg" role="status" aria-live="polite"></p>
+      <p class="fine">Usamos seu e-mail só para avisar do lançamento. Sem spam.</p>
+    </form>
+  </div>
+</section>
+
+<section class="trust wrap">
+  <h2 class="sr">Como funciona o selo Verificado</h2>
+  <ul>
+    <li><b>Documentação conferida</b><span>Escritura, CAR, CCIR e ITR analisados antes de qualquer anúncio.</span></li>
+    <li><b>Checagem ambiental</b><span>Passivos e restrições levantados, para você não herdar surpresa.</span></li>
+    <li><b>Visita técnica</b><span>Alguém da nossa rede esteve lá e viu o imóvel de verdade.</span></li>
+    <li><b>Fotos e vídeo profissionais</b><span>Drone, vídeo 4K e tour 360° para decidir com clareza.</span></li>
+  </ul>
+</section>
+
+<section class="listings wrap" id="imoveis">
+  <div class="sec-head">
+    <p class="eyebrow dark">Como será a VerdeLar</p>
+    <h2>Imóveis com o padrão que você vai encontrar aqui</h2>
+    <p class="sub">Exemplos fictícios para mostrar o padrão VerdeLar. As fotos são ilustrativas e nenhum destes imóveis está à venda ou para alugar.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filtrar por região">
+    <button class="on" data-f="todos">Todos</button>
+    <button data-f="SP">São Paulo</button>
+    <button data-f="MG">Sul de Minas</button>
+    <button data-f="RJ">Serra do Rio</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="how wrap">
+  <div class="sec-head">
+    <p class="eyebrow dark">Do sonho à chave</p>
+    <h2>Simples como deveria ser</h2>
+  </div>
+  <ol>
+    <li><i>1</i><b>Descubra</b><span>Busque por região, tamanho e estilo de vida. Cada imóvel tem fotos, vídeo e ficha técnica completos.</span></li>
+    <li><i>2</i><b>Visite com segurança</b><span>Agende a visita pelo site. Você já chega sabendo da situação documental e ambiental.</span></li>
+    <li><i>3</i><b>Feche online</b><span>Contrato digital e pagamento no mesmo lugar, com apoio jurídico quando precisar.</span></li>
+  </ol>
+</section>
+
+<section class="cta" id="avise">
+  <div class="wrap cta-in">
+    <h2>Seja o primeiro a saber quando a VerdeLar abrir.</h2>
+    <p>Estamos começando por São Paulo, sul de Minas e entorno do Rio. Deixe seu e-mail e avisamos assim que os primeiros imóveis verificados entrarem no ar.</p>
+    <form class="lead-form light" data-origem="rodape" novalidate>
+      <div class="row">
+        <label class="sr" for="email-cta">Seu e-mail</label>
+        <input id="email-cta" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Seu melhor e-mail" required>
+        <button class="btn btn-light" type="submit">Quero ser avisado quando lançar</button>
+      </div>
+      <fieldset class="chips"><legend class="sr">Estou procurando para</legend>
+        <label><input type="radio" name="interesse" value="comprar" checked><span>Comprar</span></label>
+        <label><input type="radio" name="interesse" value="alugar"><span>Alugar</span></label>
+        <label><input type="radio" name="interesse" value="os-dois"><span>Os dois</span></label>
+      </fieldset>
+      <p class="msg" role="status" aria-live="polite"></p>
+      <p class="fine">Usamos seu e-mail só para avisar do lançamento. Sem spam.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><path d="M32 8c-10 9-16 17-16 26a16 16 0 0 0 32 0c0-9-6-17-16-26z" fill="currentColor"/><path d="M32 22v34" stroke="#14301f" stroke-width="3.5" stroke-linecap="round"/></svg><span>VerdeLar</span></a>
+    <p>Página de pré-lançamento. A VerdeLar ainda não está em operação. Os imóveis exibidos são exemplos fictícios e as imagens são ilustrativas, geradas por computador.</p>
+  </div>
+</footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
